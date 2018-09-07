@@ -1,0 +1,48 @@
+body {
+    background: url(./night.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: block;
+    color: white;
+}
+
+.brand {
+    position: absolute;
+    width: 400px;
+    float: left;
+}
+
+#logo {
+    float: left;
+}
+.info{
+    margin-top: 25px;
+    float: left;
+}
+
+.pull-right {
+    margin-left: 200px;
+}
+
+.pull-right ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.pull-right ul li {
+    margin: 15px;
+}
+
+main {
+    margin: 30px;
+    padding: 30px;
+}
+
+.container {
+    
+}
