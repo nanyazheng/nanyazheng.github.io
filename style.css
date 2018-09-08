@@ -1,0 +1,131 @@
+/* general styles */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: #555;
+}
+
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 200px;
+}
+/* header style */
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 200px 0;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+    color: #fff;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1
+    }
+}
+
+.brand {
+    display: inline-block;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+}
+
+/* #logo {
+    
+}
+
+.info {
+    float: left;
+} */
+
+header nav {
+    display: flex;
+    margin-right: -15px;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    color: red;
+}
+/* hero style */
+
+.hero {
+    position: relative;
+    justify-content: center;
+    text-align: left;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero h1 {
+    font: bold 80px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font: normal 20px "Open Sans", sans-serif;
+    margin-bottom: 40px;
+}
+
+.hero a.btn {
+    padding: 20px 46px;
+    border-radius: 4px;
+    background-color: #b56e3f;
+}
+
+.hero-content-area {
+    animation: 1s slidefade 1s forwards;
+    opacity: 0;
+    margin-top: 100px;
+}
+
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
