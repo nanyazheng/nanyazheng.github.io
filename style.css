@@ -10,7 +10,7 @@ html {
     font: normal 16px sans-serif;
     color: #555;
 }
-
+ul,
 nav {
     list-style: none;
 }
@@ -27,6 +27,7 @@ a {
 a:hover {
     opacity: 1;
 }
+
 
 section {
     display: flex;
@@ -56,15 +57,20 @@ hr {
 }
 
 section h3 {
+    font-size: 38px;
+    font-weight: 800;
     margin-bottom: 30px;
+    padding: 0 20px;
+    text-align: left;
 }
 
 section p {
-    max-width: 750px;
-    line-height: 2;
+    font-size: 14px;
+    color: gray;
+    line-height: 26px;
     padding: 0 20px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: 800px) {
@@ -84,7 +90,7 @@ header {
     animation: 1s fadein 0.5s forwards;
     color: #fff;
     opacity: 0;
-    /* z-index:100; */
+    z-index:100;
 }
 
 @keyframes fadein {
@@ -213,6 +219,19 @@ header nav a:hover {
     background-size: cover;
 }
 
+.skills {
+    padding: 0 20px;
+}
+.skills li {
+    display: inline;
+    color: #fff;
+    line-height: 32px;
+    border-radius: 4px;
+    font-size: 12px;
+    background: red;
+    padding: 4px 9px;
+}
+
 @media (max-width: 1100px) {
     .project-img, .content {
         flex-basis: 50%;
@@ -270,6 +289,7 @@ form .btn:hover {
     width: 20%;
     text-align: center;
 }
+
 .col-contact-form {
     width: 65%;
     text-align: center;
